@@ -69,8 +69,9 @@ TurtleCoind --print-genesis-tx --genesis-block-reward-address TRTLv2Fyavy8CXG8BP
 
 * You should see your premine appear in the previously generated wallet.
 
+"011401ff0001b3e6cc99030242b9c2be9e6eb286dd3ceae90f8ecec4262df91f538112f5324009229d97bce321018e281e63af147caf7fd9bf06f95ab0dd1fcc34e2d20d718108f2000a92e7bf00";
 */
-const char GENESIS_COINBASE_TX_HEX[] = "011401ff0001b3e6cc99030242b9c2be9e6eb286dd3ceae90f8ecec4262df91f538112f5324009229d97bce321018e281e63af147caf7fd9bf06f95ab0dd1fcc34e2d20d718108f2000a92e7bf00";
+const char GENESIS_COINBASE_TX_HEX[] = "011401ff0001b3e6cc9903028aef861b0bc22a9b0b5d0286fe7f52527741acebedd0f59a6a04771493052b50210140f75daf3ba36ca7f1d1fab6f8ada679a2583c125f38babe253d51994e66e9c5";
 static_assert(sizeof(GENESIS_COINBASE_TX_HEX)/sizeof(*GENESIS_COINBASE_TX_HEX) != 1, "GENESIS_COINBASE_TX_HEX must not be empty.");
 
 /* This is the unix timestamp of the first "mined" block (technically block 2, not the genesis block)
@@ -85,7 +86,7 @@ const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1  = 10000;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_CURRENT = CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE;
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
 
-const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 8;
+const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 0;
 
 const uint64_t MINIMUM_FEE                                   = UINT64_C(10);
 
